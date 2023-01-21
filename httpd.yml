@@ -2,5 +2,9 @@
 - name: Server Details
   hosts: web-server
 
+  tasks:
+  - name: Remove httpd
+    yum: pkg=httpd state=absent
+
   - name: Install httpd
     yum: pkg=httpd state=present
