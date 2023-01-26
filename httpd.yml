@@ -1,6 +1,6 @@
 ---
 - name: Server Details
-  hosts: web-server
+  hosts: webservers
 
   tasks:
   - name: Remove httpd
